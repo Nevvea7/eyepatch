@@ -1,12 +1,12 @@
 {
   "name": "Leetcode Mask",
   "description": "Stop doubting yourself. Hide difficulty level of Leetcode problems and conquer them with new vigor",
-  "version": "0.1",
+  "version": "0.3",
   "background": {
     "scripts": ["js/jquery.js", "js/jquery-watch.min.js", "js/background.js"]
   },
   "permissions": [
-    "tabs", "http://leetcode.com/problemset/*","https://leetcode.com/problemset/*","http://leetcode.com/problems/*","https://leetcode.com/problems/*"
+    "tabs", "http://leetcode.com/problemset/*","https://leetcode.com/problemset/*","http://leetcode.com/problems/*","https://leetcode.com/problems/*","https://leetcode.com/tag/*", "http://leetcode.com/tag/*", "https://leetcode.com/company/*","http://leetcode.com/company/*"
   ],
   "browser_action": {
     "default_title": "Leetcode Mask",
@@ -18,7 +18,7 @@
   "128": "assets/mask_128.png"},
   "content_scripts": [
     {
-      "matches": ["http://leetcode.com/problemset/*","https://leetcode.com/problemset/*","http://leetcode.com/problems/*","https://leetcode.com/problems/*"],
+      "matches": ["http://leetcode.com/problemset/*","https://leetcode.com/problemset/*","http://leetcode.com/problems/*","https://leetcode.com/problems/*", "https://leetcode.com/tag/*", "http://leetcode.com/tag/*", "https://leetcode.com/company/*","http://leetcode.com/company/*"],
       "js": ["js/jquery.js", "js/jquery-watch.min.js", "js/background.js"]
     }
   ],
