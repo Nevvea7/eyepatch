@@ -1,0 +1,29 @@
+{
+  "name": "Leetcode Mask",
+  "description": "Stop doubting yourself. Hide away difficulty level and acceptance rate",
+  "version": "0.1",
+  "background": {
+    "scripts": ["js/jquery.js", "js/jquery-watch.min.js", "js/background.js"]
+  },
+  "permissions": [
+    "tabs", "http://leetcode.com/problemset/*","https://leetcode.com/problemset/*","http://leetcode.com/problems/*","https://leetcode.com/problems/*"
+  ],
+  "browser_action": {
+    "default_title": "Leetcode Mask",
+    "default_icon": "assets/mask_16.png",
+    "default_popup": "options.html"
+  },
+  "icons": { "16": "assets/mask_16.png",
+    "48": "assets/mask_48.png",
+  "128": "assets/mask_128.png"},
+  "content_scripts": [
+    {
+      "matches": ["http://leetcode.com/problemset/*","https://leetcode.com/problemset/*","http://leetcode.com/problems/*","https://leetcode.com/problems/*"],
+      "js": ["js/jquery.js", "js/jquery-watch.min.js", "js/background.js"]
+    }
+  ],
+  "permissions": [
+    "storage"
+  ],
+  "manifest_version": 2
+}
