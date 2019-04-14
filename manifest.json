@@ -4,7 +4,7 @@
   "version": "0.1",
   "background": {
     "scripts": ["js/jquery.js", "js/jquery-watch.min.js", "js/background.js"]
-  },
+ },
   "permissions": [
     "tabs", "http://leetcode.com/problemset/*","https://leetcode.com/problemset/*","http://leetcode.com/problems/*","https://leetcode.com/problems/*"
   ],
@@ -22,8 +22,9 @@
       "js": ["js/jquery.js", "js/jquery-watch.min.js", "js/background.js"]
     }
   ],
-  "permissions": [
+ "permissions": [
     "storage"
   ],
   "manifest_version": 2
 }
+
