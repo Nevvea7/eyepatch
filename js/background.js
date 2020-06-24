@@ -62,7 +62,9 @@ $(document).ready(function () {
             // Hide locked
             chrome.storage.sync.get('hideLocked', function(response) {
                 if (response.hideLocked) {
-                    $('tr i.fa.fa-lock').closest('tr').css('display', 'none')
+                    $('th.reactable-th-frequency.reactable-header-sortable').remove();
+                    $('div.frequency-locked').remove();
+                    $('tr i.fa.fa-lock').closest('tr').remove();
                 }
             });
 
